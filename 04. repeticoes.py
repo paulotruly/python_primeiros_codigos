@@ -22,5 +22,6 @@ while True:
     if input("Deseja adicionar outro número? S/N").upper() == 'S':
         pass
     else: 
+        print("Acabou")
         break
     

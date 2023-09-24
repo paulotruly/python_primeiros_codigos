@@ -18,6 +18,12 @@ data_stringtodate = "01/09/2023"
 data_stringtodate = datetime.strptime(data_stringtodate, "%d/%m/%Y")
 print(data_stringtodate.date())
 
+# extraindo horários em outros formatos
+
+time_stringtotime = "1510"
+object_stringtotime = datetime.strptime(time_stringtotime, "%H%M")
+print(object_stringtotime.time())
+
 # formato brasileiro
 
 print(hoje.strftime("%d/%m/%y"))
@@ -34,4 +40,6 @@ import zoneinfo
 zona = zoneinfo.ZoneInfo("Europe/London")
 agora_london = hoje.astimezone(zona)
 print(agora_london)
+
+
 
